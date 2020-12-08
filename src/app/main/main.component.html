@@ -1,14 +1,45 @@
-<p (click)="userClick()">
-    hello {{user}};
-</p>
-<button class="button" (click)="userClick()" >click</button>
-<img src ="assets/chat.PNG"> 
 
-<div>{{date | date:"short"}} </div>
+<!DOCTYPE html>
+<html lang="fr">
 
-<div *ngFor="let element of elements;let i">Hello {{i}} </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>home page </title>
+</head>
+
+<body>
+  <nav class="navbar">
+   
+
+  </nav>
+  <aside>
+    
+  </aside>
+
+  <main class="row">
+   
+      <div class="article">
+        <article class="main">
+          <p (click)="userClick()">
+            hel {{user}};
+        </p>
+        <button class="button" (click)="userClick()" >click</button>
+
+       
+        </article>
+     
+      </div>
+      <div *ngFor="let element of elements;let i">Hello {{i}} </div>
+      
+        <div [ngClass]="{'highlighted':color}">Directive </div>
+  </main>
+ 
+  <footer class="footer">
+    {{date | date:"short"}}
+  </footer>
 
 
+</body>
 
-
-<div [ngClass]="{'highlighted':color}">Directive </div>
+</html>
