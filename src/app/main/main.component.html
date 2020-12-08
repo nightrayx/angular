@@ -1,0 +1,14 @@
+<p (click)="userClick()">
+    hello {{user}};
+</p>
+<button class="button" (click)="userClick()" >click</button>
+<img src ="assets/chat.PNG"> 
+
+<div>{{date | date:"short"}} </div>
+
+<div *ngFor="let element of elements;let i">Hello {{i}} </div>
+
+
+
+
+<div [ngClass]="{'highlighted':color}">Directive </div>
